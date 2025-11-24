@@ -15,7 +15,7 @@ const renderBoard = () => {
       const squareElement = document.createElement("div");
       squareElement.classList.add(
         "square",
-        (rowindex + squareindex) % 2 === 0 ? "light" : "dark"
+        (rowindex + squareindex) % 2 === 0 ? "light" : "dark" // light and dark squares
       );
       squareElement.dataset.row = rowindex;
       squareElement.dataset.col = squareindex;
@@ -32,7 +32,7 @@ const renderBoard = () => {
         pieceElement.addEventListener("dragstart", (e) => {
           if (pieceElement.draggable) {
             draggedPiece = pieceElement;
-            sourceSquare = { row: rowindex, col: squareindex }; // ✅ FIXED
+            sourceSquare = { row: rowindex, col: squareindex }; //  FIXED
             e.dataTransfer.setData("text/plain", "");
           }
         });
