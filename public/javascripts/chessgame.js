@@ -6,6 +6,8 @@ let draggedPiece = null;
 let sourceSquare = null;
 let playerRole = null;
 
+// this is all code for rendeering the chessboard
+
 const renderBoard = () => {
   const board = chess.board();
   boardElement.innerHTML = "";
