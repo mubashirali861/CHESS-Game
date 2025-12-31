@@ -82,6 +82,7 @@ const handleMove = (source, target) => {
   socket.emit("move", move);
 };
 
+// this is unicode for pieces of chess
 const getPieceUnicode = (piece) => {
   const unicodePieces = {
     p: { w: "♙", b: "♟" },
